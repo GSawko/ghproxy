@@ -43,33 +43,33 @@ Returns the top 10 languages used by the given user ranked by the number of byte
 
 Returns the total number of stars the user has received across all repositories.
 
-  Status: 200 OK
+   Status: 200 OK
 
-  [
-    {
-      "login": "gsawko",
-      "total_stars": 15000
-    }
-  ]
+    [
+      {
+        "login": "gsawko",
+        "total_stars": 15000
+      }
+    ]
 
 ## curl http://127.0.0.1:8080/users/${username}/stats/populairty_by_repo
 
 Returns the user repositories, sorted descending by the count of stargazers.
 
-  Status: 200 OK
+    Status: 200 OK
 
-  [
-    {
-      "login": "gsawko",
-      "repository": "pie",
-      "stargazers_count": 10000
-    },
-    {
-      "login": "gsawko",
-      "repository": "ton",
-      "stargazers_count": 5000
-    }
-  ]
+    [
+     {
+        "login": "gsawko",
+        "repository": "pie",
+        "stargazers_count": 10000
+      },
+      {
+        "login": "gsawko",
+        "repository": "ton",
+        "stargazers_count": 5000
+      }
+    ]
 
 # Not implemented
 

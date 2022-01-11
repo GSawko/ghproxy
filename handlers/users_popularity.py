@@ -27,6 +27,7 @@ def handler(h: BaseHTTPRequestHandler, username: str):
         for k, v in e.hdrs.items():
             h.send_header(k, v)
         h.end_headers()
+        h.wfile.write(e.fp.read())
         return
     except Exception as e:
         msg = f"error obtaining repos for the user {username}: {e}\n"
